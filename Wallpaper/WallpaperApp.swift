@@ -60,7 +60,7 @@ struct WallpaperApp: App {
         
         //Initialization of ReveunueCat
         Purchases.logLevel = .debug
-        Purchases.configure(withAPIKey: "appl_RmXnCXFYKpAIKpygHzRLXzBduFC")
+        Purchases.configure(withAPIKey: "REVENUE_CAT")
         Purchases.shared.collectDeviceIdentifiers()
         
         
@@ -151,7 +151,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     }
     
     func getWallpapersCategories(){
-        guard let url = URL(string: "\(Global.apiUrl)wallpaper/view-wallpapers-details")
+        guard let url = URL(string: "URL")
         else {
             fatalError("Missing URL")
             
